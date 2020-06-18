@@ -1,14 +1,8 @@
 import React from "react";
 import { useApp } from "../hooks";
-import books from "../books";
 
 const SearchBook = () => {
-  const {
-    avaliableBooks,
-    setAvaliableBooks,
-    setIssuedBooks,
-    issuedBooks,
-  } = useApp();
+  const { avaliableBooks } = useApp();
 
   const [title, setTitle] = React.useState("");
 
